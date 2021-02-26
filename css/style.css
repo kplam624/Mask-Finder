@@ -11,19 +11,21 @@ body {
 }
   
 html {
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
   
 *, *:before, *:after {
     box-sizing: inherit;
+    text-size-adjust: auto;
 }
   
 .column {
     float: left;
-    width: 40%;
-    margin-bottom: 16px;
-    margin-top: 16px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     padding: 0 40px;
+    vertical-align: top;
+    text-size-adjust: auto;
 }
   
 .card {
@@ -51,29 +53,19 @@ html {
     text-align: center;
     background-color: rgb(92, 130, 148);
     color: white;
+    height: 50px;
 }
   
 .container {
-    padding: 0 16px;
+    padding: 0 40px;
     background-color:  rgb(203, 224, 233);
+    text-size-adjust: auto;
 }
   
 .container::after, .row::after {
     content: "";
     clear: both;
     display: table;
+    text-size-adjust: auto;
 }
 
-#map,
-body,
-html {
-  height: 100%;
-}
-
-.bar {
-fill: blue;
-}
-
-.bar:hover {
-fill: red;
-}
