@@ -34,41 +34,68 @@
                         <a class="nav-link" href="mask_detector.html">Mask Detector</a>
                     </li> 
                     <li class="nav-item">
-                        <a class="nav-link" href="mask_information.html">Mask Information</a>
+                        <a class="nav-link" href="mask_info.html">Mask Infomation</a>
                     </li> 
                 </ul>
             </div>
         </div>
     </nav>
-    
-    <div class="intro">
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <style>
-                    body {
-                      background-image: url('Images/face_mask.gif');
-                      background-repeat: no-repeat; 
-                      background-attachment: fixed;
-                      background-size: cover;
-                    }
-                </style>
-            </div>
+    <div class="about-section">
+        <h1>Mask Detector</h1>
+        <p> Your photo is about to be taken to detect whether or not you are wearing a mask, 
+            please agree to the consent pop-up and then stand facing the camera so that your face is visible.
+        </p>
+        <script>
+            function functionConfirm(msg, myYes, myNo) {
+                var confirmBox = $("#confirm");
+                confirmBox.find(".message").text(msg);
+                confirmBox.find(".yes,.no").unbind().click(function() {
+                   confirmBox.hide();
+                });
+                confirmBox.find(".yes").click(myYes);
+                confirmBox.find(".no").click(myNo);
+                confirmBox.show();
+            }
+        </script>
+        <style>
+            #confirm {
+                display: none;
+                background-color: rgb(92, 130, 148);
+                border: 1px solid #aaa;
+                position: fixed;
+                width: 250px;
+                left: 50%;
+                margin-left: -100px;
+                padding: 6px 8px 8px;
+                box-sizing: border-box;
+                text-align: center;
+            }
+            #confirm button {
+                background-color: rgb(92, 130, 148)8E5DA;
+                display: inline-block;
+                border-radius: 5px;
+                border: 1px solid #aaa;
+                padding: 5px;
+                text-align: center;
+                width: 80px;
+                cursor: pointer;
+            }
+            #confirm .message {
+                text-align: left;
+            }
+        </style>
+        <div id="confirm">
+            <div class="message"></div>
+            <button class="yes">Yes</button>
+            <button class="no">No</button>
         </div>
-    </div> 
-    <div class="intro">
-        <div class="column" style="float: left; vertical-align: top">
-            <div class="col-lg-5 mx-auto">
-                <h1 style="font-size: 30px; color:black; text-align: center; background-color:rgb(203, 224, 233)">Are you wearing a mask?</h1>
-            </div>
-        </div>
-    </div>
-    <div class="intro">
-        <div class="column" style="float: right; vertical-align: top">
-            <div class="col-lg-5 mx-auto">
-                <h1 style="font-size: 30px; color:black; text-align: center; background-color:rgb(203, 224, 233)">Click Mask Detector to find out!</h1>
-            </div>
-        </div>
-    </div>
+        <button onclick = 'functionConfirm("Do you consent to having your photo taken?", function yes() {
+            alert("Yes")
+        },
+        function no() {
+            alert("no")
+        });'>Consent Form</button>
+
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
