@@ -18,10 +18,10 @@ As part of continued efforts to combat COVID-19, we've created an applictaion th
 -------------------------------------
 # Team Members 
 
-Joseph Atemkuh
-Delia Hellander
-Kevin Lam:
-Sherin Mattappallil
-Buddy Slater
-Jessy Thomas 
+* Joseph Atemkuh - Programmer/ Analyst
+* Delia Hellander - Programmer/ Analyst
+* Kevin Lam - Programmer/ Analyst
+* Sherin Mattappallil - Programmer/ Analyst
+* Buddy Slater - Programmer/ Analyst
+* Jessy Thomas - Programmer/ Analyst
 
