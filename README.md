@@ -13,6 +13,18 @@ As part of continued efforts to combat COVID-19, we've created an applictaion th
  
 To provide users with a data source that will help detect and identify whether a face mask is worn or not.
 
+-----------------------------
+
+## Technologies
+
+* Javascript/HTML/CSS
+* Python
+* Flask
+* Pandas
+* Machine Learning 
+* more to add???
+
+
 
  
  
