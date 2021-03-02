@@ -36,7 +36,7 @@ HTML/CSS utilized to create the front-end pages to display the data and info in 
 -----------------------------
 ## Heroku
 
-The app was deployed to Heroku. To look at the app use the this [link](https://mask-finder.herokuapp.com/). 
+The app was deployed to Heroku. To look at the app use the this link:  (https://mask-finder.herokuapp.com/) ??? 
 
 ---------------------------
 ## Future Versions
