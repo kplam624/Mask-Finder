@@ -45,8 +45,8 @@ As we look to continuously improve, our future versions may seek to:
 
 1. Further explore whethere a mask if worn, is work effectively or not. 
 2. Continuously take in feedback and update our website based on suggestions from our users.
-.
-Stay tuned!!
+
+### Stay tuned!!
 -----------
 
 -------------------------------------
