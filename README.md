@@ -2,11 +2,18 @@
 An application that lets the user know whether or not they are wearing a mask.
 
 ---------------------------------
-## Background 
+## Background
 
 With lockdowns being lifted, businesses returning to their physical stores and offices, schools reopening, indoor dining resuming at greater numbers, and folks just looking forward to some sense of normalcy, wearing masks still remain part of continued efforts to ensure the safety and well being of our citizenry. 
 
 As part of continued efforts to combat COVID-19, we've created an applictaion that will allow users to detect whether or not someone is wearing a mask. 
+
+For example, one purpose of this application is to help establishments monitor whether their customers are abiding by their Covid Safety Guidelines. 
+
+This could help businesses keep their employees and customers safe, without having to use their employees time and resources to track down those who are not wearing a mask within their establishment.  This will save businesses money in the long run and promote public health safety, which remains a priority! 
+
+Our application will also capture a live photo, process the image, and notify the user if the person is wearing a mask or not.  
+
 
 ------------------------------
 ## Mission
@@ -24,7 +31,15 @@ To provide users with a data source that will help detect and identify whether a
 * Machine Learning 
 * more to add???
 
- -------------------------------
+--------------------------------
+## Data: 
+* Main Dataset (download from data section): https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7775036/
+
+* Other data sources:
+https://www.kaggle.com/andrewmvd/face-mask-detection
+https://github.com/chandrikadeb7/Face-Mask-Detection
+
+-------------------------------
 ## Data Cleaning / Merging Files 
 
  
