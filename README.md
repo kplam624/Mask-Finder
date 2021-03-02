@@ -25,7 +25,7 @@ To provide users with a data source that will help detect and identify whether a
 
 
 -------------------------------------
-# Team Members 
+## Team Members 
 
 * Joseph Atemkuh - Programmer/ Analyst
 * Delia Hellander - Programmer/ Analyst
@@ -33,4 +33,6 @@ To provide users with a data source that will help detect and identify whether a
 * Sherin Mattappallil - Programmer/ Analyst
 * Buddy Slater - Programmer/ Analyst
 * Jessy Thomas - Programmer/ Analyst
+
+@ TO DO: include about Us page when finalized
 
