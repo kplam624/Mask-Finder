@@ -29,13 +29,30 @@ To provide users with a data source that will help detect and identify whether a
 
  
  
+-----------------------------
+## Webpages
+---
+HTML/CSS utilized to create the front-end pages to display the data and info in a user friendly view.
 
+-----------------------------
+## Heroku
 
+---
+The app was deployed to Heroku. To look at the app use the this [link](https://mask-finder.herokuapp.com/). 
 
+(((If Heroku is unavailable then please make sure to run `mongosetup.py` followed by `app.py`. This will allow you to run the app on the local machine. You will also need an api key for mapbox.))) 
 
+---------------------------
+## Future Versions
 
+---
+As we look to continuously improve, our future versions may seek to:
 
-
+1. Further explore whethere a mask if worn, is work effectively or not. 
+2. Continuously take in feedback and update our website based on suggestions from our users.
+.
+Stay tuned!!
+-----------
 
 -------------------------------------
 ## Team Members 
