@@ -3,6 +3,7 @@ import datetime
 import os
 import socket
 import smile
+import time
 
 
 # Create an instance of flask
@@ -32,7 +33,12 @@ def about():
 @app.route('/webcamcapture')
 def capture():
     print("Responding to the webcam capture route", datetime.datetime.now())
-    result = smile.mask()
+    result = ""
+    message = smile.mask()
+    
+    result = [{'message': message}]
+    
+
     return jsonify(result)
 
 if __name__ == "__main__":

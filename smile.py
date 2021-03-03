@@ -48,13 +48,15 @@ def mask():
             
             cv2.waitKey(1650)
             cv2.destroyAllWindows()
-                
+
+            # This pulls the image and runs it into the model. 
             images = 'static/img/saved_img.jpg'
             test = tf.keras.preprocessing.image.load_img(images, target_size = (220,220))
             input_arr = keras.preprocessing.image.img_to_array(test)
             input_arr = np.array([input_arr])
             predictions = model.predict(input_arr)
-
+            
+            # This file creates a dictionary to define the outcome. 
             mask_dict = {0:'Masked', 1:'No Mask'}
             result = mask_dict[predictions.argmax()]
         
