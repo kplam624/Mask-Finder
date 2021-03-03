@@ -10,7 +10,7 @@ import logging as log
 import datetime as dt
 from time import sleep
 
-def smile():
+def mask():
     model = load_model("face.h5")
 
     cascPath = "haarcascade_frontalface_default.xml"
@@ -56,7 +56,7 @@ def smile():
             predictions = model.predict(input_arr)
 
             mask_dict = {0:'Masked', 1:'No Mask'}
-            print(mask_dict[predictions.argmax()])
+            result = mask_dict[predictions.argmax()]
         
             break
         elif key == ord('q'):
@@ -80,5 +80,5 @@ def smile():
     video_capture.release()
     cv2.destroyAllWindows()
 
-    return mask_dict[predictions.argmax()]
+    return result
 

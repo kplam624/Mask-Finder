@@ -2,7 +2,7 @@ from flask import Flask, jsonify, render_template, redirect, session
 import datetime
 import os
 import socket
-from smile import smile
+import smile
 
 
 # Create an instance of flask
@@ -32,8 +32,8 @@ def about():
 @app.route('/webcamcapture')
 def capture():
     print("Responding to the webcam capture route", datetime.datetime.now())
-    result = smile
-    return redirect('/mask-info'), jsonify(result)
+    result = smile.mask()
+    return jsonify(result)
 
 if __name__ == "__main__":
     app.run(debug=True)

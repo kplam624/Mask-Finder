@@ -1,9 +1,8 @@
-// This javascript file is only if we need to use it.
-// Not sure of the purpose yet.
-
 // Experimental code to save and image to session storage.
+// Will use flask to run the smile.py file
 
-var yesButton = d3.select("button").attr("class","yes");
+var consent = d3.select("#confirm");
+var yesButton = consent.select(".yes");
 
 yesButton.on("click", runClick);
 
@@ -14,3 +13,7 @@ function runClick(){
         console.log(result);
     })
 };
+
+// function runClick(){
+//     console.log('I have been clicked.')
+// }
