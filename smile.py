@@ -11,7 +11,7 @@ import datetime as dt
 from time import sleep
 
 
-model = load_model("face.h5")
+model = load_model("new_model.h5")
 
 cascPath = "haarcascade_frontalface_default.xml"
 faceCascade = cv2.CascadeClassifier(cascPath)
@@ -53,7 +53,7 @@ while True:
             cv2.destroyAllWindows()
             
             images = 'saved_img.jpg'
-            test = tf.keras.preprocessing.image.load_img(images, target_size = (220,220))
+            test = tf.keras.preprocessing.image.load_img(images, target_size = (224,224))
             input_arr = keras.preprocessing.image.img_to_array(test)
             input_arr = np.array([input_arr])
             predictions = model.predict(input_arr)
@@ -70,7 +70,8 @@ while True:
             # print("Image saved!")
 
             mask_dict = {0:'Masked', 1:'No Mask'}
-            print(mask_dict[predictions.argmax()])
+            # print(mask_dict[predictions.argmax()])
+            print(predictions)
         
             break
     elif key == ord('q'):
