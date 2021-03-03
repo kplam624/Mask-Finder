@@ -52,7 +52,7 @@ while True:
             gray = cv2.cvtColor(img_, cv2.COLOR_BGR2GRAY)
             print("Converted RGB image to grayscale...")
             print("Resizing image to 28x28 scale...")
-            img_ = cv2.resize(gray,(28,28))
+            img_ = cv2.resize(gray,(224,224))
             print("Resized...")
             img_resized = cv2.imwrite(filename='saved_img-final.jpg', img=img_)
             print("Image saved!")
