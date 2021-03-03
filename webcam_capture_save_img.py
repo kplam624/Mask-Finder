@@ -30,8 +30,8 @@ while True:
     )
 
     # Draw a rectangle around the faces
-    for (x, y, w, h) in faces:
-        picframe = cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
+    #for (x, y, w, h) in faces:
+    #    picframe = cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
         #cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
 
     if anterior != len(faces):
@@ -40,7 +40,7 @@ while True:
 
     key = cv2.waitKey(1)
     if key == ord('s'): 
-            cv2.imwrite(filename='saved_img.jpg', img=picframe)
+            cv2.imwrite(filename='saved_img.jpg', img=frame)
             video_capture.release()
             img_new = cv2.imread('saved_img.jpg', cv2.IMREAD_GRAYSCALE)
             img_new = cv2.imshow("Captured Image", img_new)
@@ -65,7 +65,7 @@ while True:
             print("Program ended.")
             cv2.destroyAllWindows()
             break
-    # Display the resulting frame
+    # Display the resulting frames
     cv2.imshow('Video', frame)
 
 
