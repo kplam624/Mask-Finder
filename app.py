@@ -2,6 +2,7 @@ from flask import Flask, jsonify, render_template, redirect, session
 import datetime
 import os
 import socket
+from smile import smile
 
 
 # Create an instance of flask
@@ -20,7 +21,7 @@ def maskinfo():
 
 @app.route('/mask-detector')
 def detector():
-    print("Responding to the mask info route:", datetime.datetime.now())
+    print("Responding to the mask detector route:", datetime.datetime.now())
     return render_template("mask_detector.html")
 
 @app.route('/about')
@@ -29,7 +30,7 @@ def about():
     return render_template("about_us.html")
 
 @app.route('/webcamcapture')
-def home():
+def capture():
     print("Responding to the webcam capture route", datetime.datetime.now())
     return redirect('/mask-info')
 
