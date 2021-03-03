@@ -32,7 +32,8 @@ def about():
 @app.route('/webcamcapture')
 def capture():
     print("Responding to the webcam capture route", datetime.datetime.now())
-    return redirect('/mask-info')
+    result = smile
+    return redirect('/mask-info'), jsonify(result)
 
 if __name__ == "__main__":
     app.run(debug=True)

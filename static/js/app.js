@@ -5,4 +5,12 @@
 
 var yesButton = d3.select("button").attr("class","yes");
 
-yesButton.on("click", "/webcamcapture");
+yesButton.on("click", runClick);
+
+function runClick(){
+    d3.json("/webcamcapture", function(data){
+        var result = data;
+
+        console.log(result);
+    })
+};
