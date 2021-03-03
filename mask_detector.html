@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>Mask Detector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+    crossorigin=""/>
+
+    <!-- Bootstrap/Bootswatch CSS -->
+   <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <nav id="navbar" class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" style>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarColor02" style>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mask_detector.html">Mask Detector</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link"  href="corona_info.html">Corona Information</a>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="about-section" style="padding: 100px; vertical-align: text-top">
+        <h1>Directions:</h1>
+        <p>1. Click the "Consent Form Button" and then click "Yes" to agree to having your photo captured.</p>
+        <p>2. Another window will pop up with the front facing camera activated. Look into the computer camera 
+            and press "S" on the keyboard to capture your image.</p>
+        <p>3. The application will detect whether or not you are wearing a mask. If a mask is detected, you can enter the building.</p>
+        <script>
+            function functionConfirm(msg, myYes, myNo) {
+                var confirmBox = $("#confirm");
+                confirmBox.find(".message").text(msg);
+                confirmBox.find(".yes,.no").unbind().click(function() {
+                   confirmBox.hide();
+                });
+                confirmBox.find(".yes").click(myYes);
+                confirmBox.find(".no").click(myNo);
+                confirmBox.show();
+            }
+        </script>
+        <style>
+            #confirm {
+                display: none;
+                background-color: rgb(92, 130, 148);
+                border: 1px solid #aaa;
+                position: fixed;
+                width: 250px;
+                left: 50%;
+                margin-left: -100px;
+                padding: 6px 8px 8px;
+                box-sizing: border-box;
+                text-align: center;
+            }
+            #confirm button {
+                background-color: rgb(92, 130, 148)8E5DA;
+                display: inline-block;
+                border-radius: 5px;
+                border: 1px solid #aaa;
+                padding: 5px;
+                text-align: center;
+                width: 80px;
+                cursor: pointer;
+            }
+            #confirm .message {
+                text-align: left;
+            }
+        </style>
+        <div id="confirm">
+            <div class="message"></div>
+            <button class="yes">Yes</button>
+            <button class="no">No</button>
+        </div>
+        <button onclick = 'functionConfirm("Do you consent to having your photo taken?", function yes() {
+            alert("Yes")
+        },
+        function no() {
+            alert("no")
+        });'>Consent Form</button>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>
