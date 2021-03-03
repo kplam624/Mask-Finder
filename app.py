@@ -16,7 +16,7 @@ def home():
 @app.route('/mask-info')
 def maskinfo():
     print("Responding to the mask info route:", datetime.datetime.now())
-    return render_template("mask_info.html")
+    return render_template("corona_info.html")
 
 @app.route('/mask-detector')
 def detector():
