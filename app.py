@@ -1,7 +1,8 @@
-from flask import Flask, jsonify, render_template, redirect
+from flask import Flask, jsonify, render_template, redirect, session
 import datetime
 import os
 import socket
+
 
 # Create an instance of flask
 app = Flask(__name__)
@@ -30,7 +31,7 @@ def about():
 @app.route('/webcamcapture')
 def home():
     print("Responding to the webcam capture route", datetime.datetime.now())
-    return redirect('/')
+    return redirect('/mask-info')
 
 if __name__ == "__main__":
     app.run(debug=True)
