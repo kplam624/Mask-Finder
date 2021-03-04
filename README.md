@@ -18,18 +18,19 @@ Our application will also capture a live photo, process the image, and notify th
 #### Why prevention is better than cure when it comes to coronavirus!
 
 * Step 1 Extract 
-* * Extracted coronavirus data from the website :  https://www.worldometers.info/coronavirus/
-* * Data Source Credit: Worldmeters.info
+*  Extracted coronavirus data from the website : [WordometersLink](https://www.worldometers.info/coronavirus/)
+*  Data Source Credit: Worldmeters.info
 
 * Step 2 Transformation
-* * Cleaned up the data on jupyetr notebook using pandas and created a final csv.
-* * Utlized pandas, splinter for the extraction and cleaning up process
+* Cleaned up the data on jupyetr notebook using pandas and created a final csv.
+* Utlized pandas, splinter for the extraction and cleaning up process
 
 * Step 3 Loading
-* * Loaded data into Tableau
+* Loaded cleaned up csv data file into Tableau.
 
+* Step 4: Data Analysis using Tableau
 * Tableau Visualization: [Tableau Link](https://public.tableau.com/views/Book2_16148141384700/Story1?:language=en&:display_count=y&:origin=viz_share_link)
-* * In this visualization, utilized the coronavirus dataset to analyze the countries vs the average total cases, total deaths total testing etc.
+* In this visualization, utilized the coronavirus dataset to analyze the countries vs the average total cases, total deaths total testing etc.
 
 
 ------------------------------
@@ -55,6 +56,9 @@ To provide users with a data source that will help detect and identify whether a
 * Other data sources:
 https://www.kaggle.com/andrewmvd/face-mask-detection
 https://github.com/chandrikadeb7/Face-Mask-Detection
+
+* https://www.worldometers.info/coronavirus/
+
 
 -------------------------------
 ## Data Cleaning / Merging Files 
