@@ -47,12 +47,14 @@ To provide users with a data source that will help detect and identify whether a
 ## Technologies
 
 * Javascript/HTML/CSS
-* Python
-* Flask
-* Pandas
-* Machine Learning
-* Library ( Opencv , TensorFlow , NumPy )
-* more to add???
+* Python 3.6.12
+* Flask 
+* Pandas 
+* Split-folder
+* Opencv
+* TensorFlow 2.4.1
+* Keras 
+* NumPy 
 
 --------------------------------
 ## Data: 
@@ -68,7 +70,13 @@ https://github.com/chandrikadeb7/Face-Mask-Detection
 -------------------------------
 ## Data Cleaning / Merging Files 
 
- 
+Within the output directory contains the images that were used for training the `face.h5` model. The images were split into three categories(test, train, and validation) along with their subcategories(mask, and no mask).
+
+This was done through the python package splitfolders, splitting the images from the `Data` directory.
+
+![splitfolders](Images/splitfolders.png)
+
+The different directories are set to variables and are primed for training.
  
 -----------------------------
 ## Webpages
@@ -77,16 +85,20 @@ HTML/CSS utilized to create the front-end pages to display the data and info in 
 -----------------------------
 ## Heroku
 
-The app was deployed to Heroku. To look at the app use the this link:  (https://mask-finder.herokuapp.com/) ??? 
+A hope for the app is to be deployed to Heroku. <!-- To look at the app use the this link:  (https://mask-finder.herokuapp.com/) ???  -->
+
+While this is being done you can try the app for yourself. 
 
 ---------------------------
 ## Future Versions
 
 As we look to continuously improve, our future versions may seek to:
 
-1. Further explore whethere a mask if worn, is work effectively or not. 
-2. Continuously take in feedback and update our website based on suggestions from our users.
-3. Other noted facial recognition systems misidentify people of color more often than white people, according to a U.S. government study released on Thursday that
+1. Further explore whethere a mask if worn, is work effectively or not.
+2. Further training the current model to differentiate beards from masks.
+3. Have the model categorize the faces through a live feed.
+4. Continuously take in feedback and update our website based on suggestions from our users.
+5. Other noted facial recognition systems misidentify people of color more often than white people, according to a U.S. government study released on Thursday that
    is likely to increase skepticism of technology widely used by law enforcement agencies. 
    see link for more information
    The study also found that African-American females are more likely to be misidentified in “one-to-many” matching, which can be used for identification of a     
