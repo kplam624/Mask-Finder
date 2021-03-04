@@ -17,11 +17,12 @@ function init(){
         case 'No Mask':
 
             console.log("Go get a mask");
+            
             sessionStorage.removeItem("result");
             break;
         
         case 'Mask':
-            
+
             console.log("You are free to go in.");
             sessionStorage.removeItem("result");
             break;

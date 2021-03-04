@@ -1,9 +1,8 @@
 from flask import Flask, jsonify, render_template, redirect, session
 import datetime
-import os
 import socket
 import smile
-import time
+
 
 
 # Create an instance of flask
