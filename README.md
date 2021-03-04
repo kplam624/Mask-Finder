@@ -18,17 +18,21 @@ Our application will also capture a live photo, process the image, and notify th
 #### Why prevention is better than cure when it comes to coronavirus!
 
 * Step 1 Extract 
-** Extracted coronavirus data from the website : [WorldometersLink](https://www.worldometers.info/coronavirus/)
+
+*  Extracted coronavirus data from the website : [WorldometersLink](https://www.worldometers.info/coronavirus/)
 *  Data Source Credit: Worldometers.info
 
 * Step 2 Transformation
+
 * Cleaned up the data on jupyetr notebook using pandas and created a final csv.
 * Utlized pandas, splinter for the extraction and cleaning up process
 
 * Step 3 Loading
+
 * Loaded cleaned up csv data file into Tableau.
 
 * Step 4: Data Analysis using Tableau
+
 * Tableau Visualization: [Tableau Link](https://public.tableau.com/views/Book2_16148141384700/Story1?:language=en&:display_count=y&:origin=viz_share_link)
 * In this visualization, utilized the coronavirus dataset to analyze the countries vs the average total cases, total deaths total testing etc.
 
