@@ -85,7 +85,7 @@ As we look to continuously improve, our future versions may seek to:
 
 1. Further explore whethere a mask if worn, is work effectively or not. 
 2. Continuously take in feedback and update our website based on suggestions from our users.
-3. Other noted acial recognition systems misidentify people of color more often than white people, according to a U.S. government study released on Thursday that
+3. Other noted facial recognition systems misidentify people of color more often than white people, according to a U.S. government study released on Thursday that
    is likely to increase skepticism of technology widely used by law enforcement agencies. 
    see link for more information
    The study also found that African-American females are more likely to be misidentified in “one-to-many” matching, which can be used for identification of a     
