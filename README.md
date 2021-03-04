@@ -50,7 +50,8 @@ To provide users with a data source that will help detect and identify whether a
 * Python
 * Flask
 * Pandas
-* Machine Learning 
+* Machine Learning
+* Library ( Opencv , TensorFlow , NumPy )
 * more to add???
 
 --------------------------------
