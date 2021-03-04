@@ -17,17 +17,17 @@ Our application will also capture a live photo, process the image, and notify th
 ### Coronavirus Insights: Learn more about why you should wear masks!!
 #### Tableau Visualization
 
-* Step 1 Extract 
+* Step 1 Extract (See Data_Visualization branch)
 
 *  Extracted coronavirus data from the website : [WorldometersLink](https://www.worldometers.info/coronavirus/)
 *  Data Source Credit: Worldometers.info
 
-* Step 2 Transformation
+* Step 2 Transformation (See Data_Visualization branch)
 
 * Cleaned up the data on jupyetr notebook using pandas and created a final csv.
 * Utlized pandas, splinter for the extraction and cleaning up process
 
-* Step 3 Loading
+* Step 3 Loading (See Data_Visualization branch)
 
 * Loaded cleaned up csv data file into Tableau.
 
