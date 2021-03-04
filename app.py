@@ -2,6 +2,7 @@ from flask import Flask, jsonify, render_template, redirect, session
 import datetime
 import socket
 import smile
+import sys
 
 
 
@@ -37,7 +38,9 @@ def capture():
     
     result = [{'message': message}]
     
-
+    # if result != "":
+    #     sys.exit('Successfully closed.')
+    
     return jsonify(result)
 
 if __name__ == "__main__":

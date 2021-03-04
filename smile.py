@@ -84,4 +84,4 @@ def mask():
     cv2.destroyAllWindows()
 
     return result
-mask()
+# mask()
