@@ -5,7 +5,7 @@ data = [
 ];
 
 data2 = [
-    'https://static.designboom.com/wp-content/uploads/2013/03/thumbsAmmo03.jpg',
-    'https://static.designboom.com/wp-content/uploads/2013/03/thumbsAmmo021.jpg',
+    'https://image.freepik.com/free-vector/cute-chibi-police-officer-wearing-mask-set_8580-409.jpg',
+    'https://image.freepik.com/free-vector/cute-chibi-male-man-shopping-wearing-face-mask_8580-407.jpg',
     'https://image.freepik.com/free-vector/cute-chibi-medical-doctor-with-face-mask-set_8580-408.jpg'
 ];

@@ -21,13 +21,13 @@ function init(){
             sessionStorage.removeItem("result");
             break;
         
-        case 'Mask':
+        case 'Masked':
 
             console.log("You are free to go in.");
 
             title.text("Thank you! You may now Enter.");
-            svg.attr('width', 800)
-               .attr('height', 800)
+            svg.attr('width', 700)
+               .attr('height', 500)
                .append('image').attr('xlink:href', maskData[index]);
 
             sessionStorage.removeItem("result");
@@ -46,6 +46,8 @@ function runClick(){
         console.log(outcome);
 
         sessionStorage.setItem("result", String(outcome));
+        
+        var index = Math.floor(Math.random() * 2)
 
         location.reload()
     });
