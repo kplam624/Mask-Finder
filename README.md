@@ -2,7 +2,7 @@
 An application that lets the user know whether or not they are wearing a mask.
 
 ---------------------------------
-## Background
+## Background Objective 
 
 With lockdowns being lifted, businesses returning to their physical stores and offices, schools reopening, indoor dining resuming at greater numbers, and folks just looking forward to some sense of normalcy, wearing masks still remain part of continued efforts to ensure the safety and well being of our citizenry. 
 
@@ -12,7 +12,24 @@ For example, one purpose of this application is to help establishments monitor w
 
 This could help businesses keep their employees and customers safe, without having to use their employees time and resources to track down those who are not wearing a mask within their establishment.  This will save businesses money in the long run and promote public health safety, which remains a priority! 
 
-Our application will also capture a live photo, process the image, and notify the user if the person is wearing a mask or not.  
+Our application will also capture a live photo, process the image, and notify the user if the person is wearing a mask or not. 
+
+### Coronavirus Background Info: Tableau Visualization
+#### Why prevention is better than cure when it comes to coronavirus!
+
+* Step 1 Extract 
+* * Extracted coronavirus data from the website :  https://www.worldometers.info/coronavirus/
+* * Data Source Credit: Worldmeters.info
+
+* Step Transformation
+* * Cleaned up the data on jupyetr notebook using pandas and created a final csv.
+* * Utlized pandas, splinter for the extraction and cleaning up process
+
+* Loading
+* * Loaded data into Tableau
+
+* Tableau Visualization: Will add Link
+* * In this visualization, utilized the coronavirus dataset to analyze the countries vs the average total cases, total deaths total testing etc.
 
 
 ------------------------------
