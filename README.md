@@ -18,7 +18,7 @@ Our application will also capture a live photo, process the image, and notify th
 #### Why prevention is better than cure when it comes to coronavirus!
 
 * Step 1 Extract 
-*  Extracted coronavirus data from the website : [WorldometersLink](https://www.worldometers.info/coronavirus/)
+** Extracted coronavirus data from the website : [WorldometersLink](https://www.worldometers.info/coronavirus/)
 *  Data Source Credit: Worldometers.info
 
 * Step 2 Transformation
