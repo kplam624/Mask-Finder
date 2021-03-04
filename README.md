@@ -14,7 +14,7 @@ This could help businesses keep their employees and customers safe, without havi
 
 Our application will also capture a live photo, process the image, and notify the user if the person is wearing a mask or not. 
 
-### Coronavirus Background Info: Tableau Visualization
+### Coronavirus Insights: Tableau Visualization
 #### Why prevention is better than cure when it comes to coronavirus!
 
 * Step 1 Extract 
