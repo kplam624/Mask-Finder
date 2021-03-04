@@ -87,7 +87,10 @@ As we look to continuously improve, our future versions may seek to:
 2. Continuously take in feedback and update our website based on suggestions from our users.
 3. Other noted acial recognition systems misidentify people of color more often than white people, according to a U.S. government study released on Thursday that
    is likely to increase skepticism of technology widely used by law enforcement agencies. 
-   see link for more information( https://www.reuters.com/article/us-usa-crime-face/u-s-government-study-finds-racial-bias-in-facial-recognition-tools-idUSKBN1YN2V1)
+   see link for more information
+   The study also found that African-American females are more likely to be misidentified in “one-to-many” matching, which can be used for identification of a     
+   person of interest in a criminal investigation.
+   ( https://www.reuters.com/article/us-usa-crime-face/u-s-government-study-finds-racial-bias-in-facial-recognition-tools-idUSKBN1YN2V1 )
 
 ### Stay tuned!!
 -----------
