@@ -59,6 +59,7 @@ def mask():
             # This file creates a dictionary to define the outcome. 
             mask_dict = {0:'Masked', 1:'No Mask'}
             result = mask_dict[predictions.argmax()]
+            print(result)
         
             break
         elif key == ord('q'):
@@ -83,4 +84,4 @@ def mask():
     cv2.destroyAllWindows()
 
     return result
-
+mask()

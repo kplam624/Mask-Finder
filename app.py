@@ -27,7 +27,7 @@ def detector():
 @app.route('/about')
 def about():
     print("Responding to the about us page:", datetime.datetime.now())
-    return render_template("about_us.html")
+    return render_template("about.html")
 
 @app.route('/webcamcapture')
 def capture():
