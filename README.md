@@ -21,11 +21,11 @@ Our application will also capture a live photo, process the image, and notify th
 * * Extracted coronavirus data from the website :  https://www.worldometers.info/coronavirus/
 * * Data Source Credit: Worldmeters.info
 
-* Step Transformation
+* Step 2 Transformation
 * * Cleaned up the data on jupyetr notebook using pandas and created a final csv.
 * * Utlized pandas, splinter for the extraction and cleaning up process
 
-* Loading
+* Step 3 Loading
 * * Loaded data into Tableau
 
 * Tableau Visualization: Will add Link
