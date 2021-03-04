@@ -28,7 +28,7 @@ Our application will also capture a live photo, process the image, and notify th
 * Step 3 Loading
 * * Loaded data into Tableau
 
-* Tableau Visualization: Will add Link
+* Tableau Visualization: [Tableau Link](https://public.tableau.com/views/Book2_16148141384700/Story1?:language=en&:display_count=y&:origin=viz_share_link)
 * * In this visualization, utilized the coronavirus dataset to analyze the countries vs the average total cases, total deaths total testing etc.
 
 
