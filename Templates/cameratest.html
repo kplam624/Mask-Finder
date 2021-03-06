@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+    crossorigin=""/>
+
+    <!-- d3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+    
+    <!-- Bootstrap/Bootswatch CSS -->
+   <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <link rel ="stylesheet" type="text/css" href="../static/css/styles2.css">
+      
+      </style>
+
+</head>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+          margin: 0;
+        }
+        
+        html {
+          box-sizing: border-box;
+        }
+        
+        *, *:before, *:after {
+          box-sizing: inherit;
+        }
+        
+        .column {
+          float: left;
+          width: 33.3%;
+          margin-bottom: 16px;
+          padding: 0 8px;
+        }
+        
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          margin: 8px;
+        }
+        
+        .about-section {
+          padding: 50px;
+          text-align: center;
+          background-color: #474e5d;
+          color: white;
+        }
+        
+        .container {
+          padding: 0 16px;
+        }
+        
+        .container::after, .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        .title {
+          color: grey;
+        }
+        
+        .button {
+          border: none;
+          outline: 0;
+          display: inline-block;
+          padding: 8px;
+          color: white;
+          background-color: #000;
+          text-align: center;
+          cursor: pointer;
+          width: 100%;
+        }
+        
+        .button:hover {
+          background-color: #555;
+        }
+        
+        @media screen and (max-width: 650px) {
+          .column {
+            width: 100%;
+            display: block;
+          }
+        }
+        </style>
+<body>    
+<!-- The buttons to control the stream -->
+<div class="button-group">
+    <button id="btn-start" type="button" class="button">Start Streaming</button>
+    <button id="btn-stop" type="button" class="button">Stop Streaming</button>
+    <button id="btn-capture" type="button" class="button">Capture Image</button>
+  </div>
+  
+  <!-- Video Element & Canvas -->
+  <div class="play-area">
+    <div class="play-area-sub">
+      <h3>The Stream</h3>
+      <video id="stream" width="320" height="240"></video>
+    </div>
+    <div class="play-area-sub">
+      <h3>The Capture</h3>
+      <canvas id="capture" width="320" height="240"></canvas>
+      <div id="snapshot"></div>
+    </div>
+  </div>
+   
+  
+    <script src = '../static/js/cam.js'></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>
