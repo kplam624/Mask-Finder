@@ -14,29 +14,6 @@ This could help businesses keep their employees and customers safe, without havi
 
 Our application will also capture a live photo, process the image, and notify the user if the person is wearing a mask or not. 
 
-### Coronavirus Insights: Learn more about why you should wear masks!!
-#### Tableau Visualization
-
-* Step 1 Extract (See Data_Visualization branch)
-
-*  Extracted coronavirus data from the website : [WorldometersLink](https://www.worldometers.info/coronavirus/)
-*  Data Source Credit: Worldometers.info
-
-* Step 2 Transformation (See Data_Visualization branch)
-
-* Cleaned up the data on jupyetr notebook using pandas and created a final csv.
-* Utlized pandas, splinter for the extraction and cleaning up process
-
-* Step 3 Loading (See Data_Visualization branch)
-
-* Loaded cleaned up csv data file into Tableau.
-
-* Step 4: Data Analysis using Tableau
-
-* Tableau Visualization: [Tableau Link](https://public.tableau.com/views/Book2_16148141384700/Story1?:language=en&:display_count=y&:origin=viz_share_link)
-* In this visualization, utilized the coronavirus dataset to analyze the countries vs the average total cases, total deaths total testing etc.
-
-
 ------------------------------
 ## Mission
  
@@ -62,7 +39,6 @@ To provide users with a data source that will help detect and identify whether a
 
 * Other data sources:
 https://www.kaggle.com/andrewmvd/face-mask-detection
-https://github.com/chandrikadeb7/Face-Mask-Detection
 
 * https://www.worldometers.info/coronavirus/
 
@@ -83,6 +59,31 @@ The different directories are set to variables and are primed for training.
 HTML/CSS utilized to create the front-end pages to display the data and info in a user friendly view.
 
 -----------------------------
+### Coronavirus Insights: Learn more about why you should wear masks!!
+#### Tableau Visualization
+
+* Step 1 Extract (See Data_Visualization branch)
+
+*  Extracted coronavirus data from the website : [WorldometersLink](https://www.worldometers.info/coronavirus/)
+*  Data Source Credit: Worldometers.info
+
+* Step 2 Transformation (See Data_Visualization branch)
+
+* Cleaned up the data on jupyetr notebook using pandas and created a final csv.
+* Utlized pandas, splinter for the extraction and cleaning up process
+
+* Step 3 Loading (See Data_Visualization branch)
+
+* Loaded cleaned up csv data file into Tableau.
+
+* Step 4: Data Analysis using Tableau
+
+* Tableau Visualization: [Tableau Link](https://public.tableau.com/views/Book2_16148141384700/Story1?:language=en&:display_count=y&:origin=viz_share_link)
+* In this visualization, utilized the coronavirus dataset to analyze the countries vs the average total cases, total deaths total testing etc.
+
+
+
+---------------------------------
 ## Heroku
 
 A hope for the app is to be deployed to Heroku. <!-- To look at the app use the this link:  (https://mask-finder.herokuapp.com/) ???  -->
@@ -118,6 +119,4 @@ As we look to continuously improve, our future versions may seek to:
 * Sherin Mattappallil - Programmer/ Analyst
 * Buddy Slater - Programmer/ Analyst
 * Jessy Thomas - Programmer/ Analyst
-
-@ TO DO: include about Us page when finalized
 
