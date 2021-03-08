@@ -2,61 +2,7 @@
 // https://html5.tutorials24x7.com/blog/how-to-capture-image-from-camera
 // This code is to experiment to be used for application.
 
-
-// // Setting the up the variables that will be used.
-// var startCap = d3.select('#btn-start');
-// var stopCap = d3.select('#btn-stop');
-// var capture = d3.select('#btn-capture');
-
-// var stream = d3.select('#stream')
-// var capture = d3.select('#capture')
-// var snapshot = d3.select('#snapshot')
-
-// // Video stream
-
-// var cameraStream = null;
-
-// // Listeners
-
-// startCap.on('click', startStream);
-// stopCap.on('click', stopStream)
-
-// function startStream(){
-//     var mediaSupport = 'mediaDevices' in navigator;
-
-//     if (mediaSupport && null == cameraStream){
-//         navigator.mediaDevices.getUserMedia( {video: true} )
-//         .then(function(mediaStream){
-
-//             cameraStream = mediaStream;
-//             stream.srcObject = mediaStream;
-//             stream.play();
-//         })
-//         .catch(function(err){
-//             console.log("Unable to access Camera: " + err);
-//         });
-//     }
-//     else{
-//         alert('Your Browser does not support media devices.')
-
-//         return;
-//     }
-// };
-
-// function stopStream(){
-//     if (null != cameraStream){
-//         var track = cameraStream.getTracks()[0];
-
-//         track.stop();
-//         stream.load();
-
-//         cameraStream = null;
-//     }
-// };
-
-// function capture(){
-
-// };
+var data_uri
 
 // The buttons to start & stop stream and to capture the image
 var btnStart = document.getElementById( "btn-start" );
@@ -133,6 +79,27 @@ function captureSnapshot() {
 
     snapshot.innerHTML = '';
 
+    // We would like to save the datauri for a post request.
+    data_uri = img.src;
+
     snapshot.appendChild( img );
+    // console.log(data_uri)
+
+    upload(data_uri)
   }
+}
+
+function upload(dataurl){
+
+  var request = XMLHttpRequest();
+  
+  request.open("POST","/webcamcapture", true);
+
+  // request.open("POST","http://localhost:5000/webcamcapture", true);
+
+  content = new FormData();
+
+  content.append("image", dataurl);
+
+  request.send(content);
 }
