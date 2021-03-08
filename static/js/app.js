@@ -4,7 +4,7 @@
 function init(){
     console.log('Hello person.')
     var state = sessionStorage.getItem("result")
-    
+    var index = Math.floor(Math.random() * 2)
     switch(state){
         case 'No Mask':
             
@@ -38,7 +38,7 @@ function init(){
     };
 };
 
-function runClick(){
+function warning(){
     d3.json("/webcamcapture", function(data){
         console.log(data);
         var outcome = data[0].message;
@@ -47,15 +47,16 @@ function runClick(){
 
         sessionStorage.setItem("result", String(outcome));
         
-        var index = Math.floor(Math.random() * 2)
+        // var index = Math.floor(Math.random() * 2)
 
-        location.reload()
+        init()
     });
 };
 
 var noMaskData = data
 var maskData = data2
-var index = Math.floor(Math.random() * 2)
+
+// var index = Math.floor(Math.random() * 2)
 
 var consent = d3.select("#confirm");
 var yesButton = consent.select(".yes");
@@ -68,6 +69,6 @@ var svg = picture.insert("svg")
 
 // Defines a function to run on load.
 
-yesButton.on("click", runClick);
+// yesButton.on("click", runClick);
 
 init();

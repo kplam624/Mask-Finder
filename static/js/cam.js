@@ -80,18 +80,23 @@ function captureSnapshot() {
     snapshot.innerHTML = '';
 
     // We would like to save the datauri for a post request.
-    data_uri = img.src;
 
     snapshot.appendChild( img );
+
+    data_uri = snapshot.firstChild.getAttribute( "src" )
     // console.log(data_uri)
 
-    upload(data_uri)
+    var imageData   = dataURItoBlob( data_uri );
+    
+    upload(imageData)
+
+    warning()
   }
 }
 
-function upload(dataurl){
+function upload(images){
 
-  var request = XMLHttpRequest();
+  var request = new XMLHttpRequest();
   
   request.open("POST","/webcamcapture", true);
 
@@ -99,7 +104,24 @@ function upload(dataurl){
 
   content = new FormData();
 
-  content.append("image", dataurl);
+  content.append("image", images, "myimage");
 
   request.send(content);
+  
+}
+
+function dataURItoBlob( dataURI ) {
+
+	var byteString = atob( dataURI.split( ',' )[ 1 ] );
+	var mimeString = dataURI.split( ',' )[ 0 ].split( ':' )[ 1 ].split( ';' )[ 0 ];
+	
+	var buffer	= new ArrayBuffer( byteString.length );
+	var data	= new DataView( buffer );
+	
+	for( var i = 0; i < byteString.length; i++ ) {
+	
+		data.setUint8( i, byteString.charCodeAt( i ) );
+	}
+	
+	return new Blob( [ buffer ], { type: mimeString } );
 }

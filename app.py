@@ -1,14 +1,15 @@
-from urllib import request
-from flask import Flask, jsonify, render_template, redirect, session
+from urllib import request as rq
+from flask import Flask, jsonify, render_template, redirect, session, request
 import datetime
 import socket
-import smile
 import sys
 import tensorflow as tf
 import numpy as np
 from tensorflow import keras
 from keras.preprocessing import image
 from tensorflow.keras.models import load_model
+
+# import smile
 
 model = load_model("face.h5")
 
@@ -57,7 +58,7 @@ def capture():
         result = ""
         # message = smile.mask()
 
-        with request.urlopen(data_uri) as response:
+        with rq.urlopen(img) as response:
             data = response.read()
 
         with open("static/img/saved_image.jpg", "wb") as j:
