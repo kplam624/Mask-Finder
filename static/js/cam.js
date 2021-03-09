@@ -74,7 +74,7 @@ function captureSnapshot() {
 
     ctx.drawImage( stream, 0, 0, capture.width, capture.height );
   
-    img.src   = capture.toDataURL( "image/png" );
+    img.src   = capture.toDataURL( "image/jpg" );
     img.width = 240;
 
     snapshot.innerHTML = '';
@@ -83,14 +83,19 @@ function captureSnapshot() {
 
     snapshot.appendChild( img );
 
-    data_uri = snapshot.firstChild.getAttribute( "src" )
-    // console.log(data_uri)
+    data_uri = snapshot.firstChild.getAttribute( "src" );
+    
+    console.log(data_uri);
 
+    // Attempt to upload just the data uri
+    // upload(data_uri);
+
+    // Create a blob of the data_uri and to upload it to the server.
     var imageData   = dataURItoBlob( data_uri );
     
-    upload(imageData)
+    upload(imageData);
 
-    warning()
+    warning();
   }
 }
 
@@ -104,7 +109,13 @@ function upload(images){
 
   content = new FormData();
 
-  content.append("image", images, "myimage");
+  // Creates a new form to be sent to the server
+  content.append("image", images, "saved_image.jpg");
+
+  console.log(content);
+
+  // Attempting to use a different form and sending a data uri instead of an image.
+  // content.append("image", images);
 
   request.send(content);
   
