@@ -121,8 +121,10 @@ function upload(images){
   
 }
 
+// This code will create a blob object.
 function dataURItoBlob( dataURI ) {
 
+  // Splits the datauri string.
 	var byteString = atob( dataURI.split( ',' )[ 1 ] );
 	var mimeString = dataURI.split( ',' )[ 0 ].split( ':' )[ 1 ].split( ';' )[ 0 ];
 	
