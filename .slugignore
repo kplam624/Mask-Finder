@@ -1,9 +1,16 @@
 new_model.h5
 /Data
 /output
+/Images
 /static/img/saved_img.jpg
 /static/img/saved_image.jpg
 /Templates/cameratest.html
 /the_gang
 /notebooks_misc
 haarcascade_frontalface_default.xml
+smile.py
+webcam_capture_save_img.py
+webcam.log
+README.md
+/__pycache__
+/.ipynb_checkpoints
