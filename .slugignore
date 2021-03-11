@@ -5,3 +5,5 @@ new_model.h5
 /static/img/saved_image.jpg
 /Templates/cameratest.html
 /the_gang
+/notebooks_misc
+haarcascade_frontalface_default.xml
