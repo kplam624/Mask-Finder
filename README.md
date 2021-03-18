@@ -55,11 +55,7 @@ This was done through the python package splitfolders, splitting the images from
 The different directories are set to variables and are primed for training.
  
 -----------------------------
-## Webpages
-HTML/CSS utilized to create the front-end pages to display the data and info in a user friendly view.
-
------------------------------
-### Coronavirus Insights: Learn more about why you should wear masks!!
+## Coronavirus Insights: Learn more about why you should wear masks!!
 #### Tableau Visualization
 
 * Step 1 Extract (See Data_Visualization branch)
@@ -81,7 +77,10 @@ HTML/CSS utilized to create the front-end pages to display the data and info in 
 * Tableau Visualization: [Tableau Link](https://public.tableau.com/views/Book2_16148141384700/Story1?:language=en&:display_count=y&:origin=viz_share_link)
 * In this visualization, utilized the coronavirus dataset to analyze the countries vs the average total cases, total deaths total testing etc.
 
+-----------------------------
+## Webpages
 
+HTML/CSS utilized to create the front-end pages to display the data and info in a user friendly view.
 
 ---------------------------------
 ## Heroku
