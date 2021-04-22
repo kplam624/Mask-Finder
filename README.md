@@ -55,6 +55,12 @@ This was done through the python package splitfolders, splitting the images from
 The different directories are set to variables and are primed for training.
  
 -----------------------------
+## Model training
+There were two different approaches used in training the model. The first approach was to create a new model from scratch. The latter is to further train a preexisting model. Between the two methods the one used was a pretrained vgg19 model.
+
+
+
+-----------------------------
 ## Coronavirus Insights: Learn more about why you should wear masks!!
 #### Tableau Visualization
 
