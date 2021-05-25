@@ -52,13 +52,13 @@ This was done through the python package splitfolders, splitting the images from
 
 ![splitfolders](Images/splitfolders.png)
 
-The different directories are set to variables and are primed for training.
+The different directories are set to their respected variables and are primed for model training.
  
 -----------------------------
 ## Model training
-There were two different approaches used in training the model. The first approach was to create a new model from scratch. The latter is to further train a preexisting model. Between the two methods the one used was a pretrained vgg19 model.
+There were two different approaches used in training the model. The first approach was to create a new model from scratch. The latter is to further train a preexisting model. Between the two methods the latter was done, using a pretrained vgg19 model.
 
-
+The model requires the three image directories above. Creating 
 
 -----------------------------
 ## Coronavirus Insights: Learn more about why you should wear masks!!
@@ -93,7 +93,7 @@ HTML/CSS utilized to create the front-end pages to display the data and info in 
 
 A hope for the app is to be deployed to Heroku. <!-- To look at the app use the this link:  (https://mask-finder.herokuapp.com/) ???  -->
 
-While this is being done you can try the app for yourself. 
+While this is being done you can try the app yourself by cloning the repository. 
 
 ---------------------------
 ## Future Versions
